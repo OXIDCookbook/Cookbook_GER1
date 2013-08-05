@@ -1,0 +1,9 @@
+body .aloha-editable-highlight {
+    outline:none !important;
+    background:#FFBBA0;
+}
+
+body .aloha-editable-active, body .aloha-editable-active[contenteditable="true"]:focus {
+    outline:none !important;
+    background:rgba(0,89,255,0.2);
+}

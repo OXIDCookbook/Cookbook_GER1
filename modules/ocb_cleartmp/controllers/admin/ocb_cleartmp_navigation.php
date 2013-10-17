@@ -52,6 +52,9 @@ class ocb_cleartmp_navigation extends ocb_cleartmp_navigation_parent
             case 'smarty':
                 $aFiles = glob($sTmpDir.'/smarty/*.php');
                 break;
+            case 'staticcache':
+                $aFiles = glob($sTmpDir.'/ocb_cache/*.json');
+                break;
             case 'language':
                 oxRegistry::get('oxUtils')->resetLanguageCache();
                 break;
@@ -61,6 +64,7 @@ class ocb_cleartmp_navigation extends ocb_cleartmp_navigation_parent
             case 'complete':
                 $aFiles = glob($sTmpDir.'/*{.php,.txt}',GLOB_BRACE);
                 $aFiles = array_merge($aFiles, glob($sTmpDir.'/smarty/*.php'));
+                $aFiles = array_merge($aFiles, glob($sTmpDir.'/ocb_cache/*.json'));
                 break;
             case 'seo':
                 $aFiles = glob($sTmpDir.'/*seo.txt');

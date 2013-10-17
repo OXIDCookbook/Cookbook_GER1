@@ -43,6 +43,7 @@
               <select name="clearoption">
                   <option value="none">[{ oxmultilang ident="OCB_CLEARTMP_PLEASECHOOSE" }]</option>
                   <option value="smarty">[{ oxmultilang ident="OCB_CLEARTMP_SMARTY" }]</option>
+                  <option value="staticcache">[{ oxmultilang ident="OCB_CLEARTMP_STATICCACHE" }]</option>
                   <option value="language">[{ oxmultilang ident="OCB_CLEARTMP_LANGUAGE" }]</option>
                   <option value="database">[{ oxmultilang ident="OCB_CLEARTMP_DATABASE" }]</option>
                   <option value="seo">[{ oxmultilang ident="OCB_CLEARTMP_SEO" }]</option>

@@ -20,6 +20,7 @@ class ocb_cleartmp_oxshopcontrol extends ocb_cleartmp_oxshopcontrol_parent
             $sTmpDir = realpath($oConf->getShopConfVar('sCompileDir'));
             $aFiles = glob($sTmpDir.'/*{.php,.txt}',GLOB_BRACE);
             $aFiles = array_merge($aFiles, glob($sTmpDir.'/smarty/*.php'));
+            $aFiles = array_merge($aFiles, glob($sTmpDir.'/ocb_cache/*.json'));
             if(count($aFiles) > 0)
             {
                 foreach($aFiles as $file) {

@@ -1,1 +1,0 @@
-[{oxstyle include=$oViewConf->getModuleUrl("ocb_shortcheckout", "out/src/css/shortcheckout.css")}]

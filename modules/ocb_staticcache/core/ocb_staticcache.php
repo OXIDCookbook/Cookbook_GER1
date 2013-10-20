@@ -103,6 +103,14 @@ class ocb_staticcache
         {
             return false;
         }
+        $oConf = oxRegistry::getConfig();
+        $partial = $oConf->getParameter('renderPartial');
+        
+        if(!empty($partial))
+        {
+            return false;
+        }
+        
         return true;
     }
     
